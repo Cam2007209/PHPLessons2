@@ -12,7 +12,9 @@
       <button>Submit</button>
     </form>
     <?php
+    //This gets something from the database
     $name=$_GET['person'];
+    //This is the printed text
     echo $name. " is very smart.";
     ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
