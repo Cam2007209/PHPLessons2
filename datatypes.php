@@ -9,17 +9,22 @@
 <body>
     <?php
         //string
-        $name='Coding is fun';
+        $name='Cameron is cool';
 
         //Integer
-        $name=20;
+        $name=3;
 
         //Float 
-        $name=20.454;
+        $name=3.14159;
 
+        /* Boolean
+        True=1
+        False=0
+        */
+       
         //Array
-        $names= array ("Daniel","Dennis","Michael")
-        echo $names['1']
+        $names= array ("Kamron","Camron","Cameron");
+        echo $names['2'];
     ?>
 </body>
 </html>
