@@ -16,7 +16,7 @@ body{
 <body>
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Home</a>
+    <a class="navbar-brand" href="header.php">Header</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,6 +36,9 @@ body{
             <li><a class="dropdown-item" href="datatypes.php">Data Types</a></li>
             <li><a class="dropdown-item" href="operators.php">Operators</a></li>
             <li><a class="dropdown-item" href="index.php">Index</a></li>
+            <li><a class="dropdown-item" href="arrays.php">Arrays</a></li>
+            <li><a class="dropdown-item" href="loops.php">Loops</a></li>
+            <li><a class="dropdown-item" href="functions.php">Functions</a></li>
           </ul>
         </li>
       </ul>
