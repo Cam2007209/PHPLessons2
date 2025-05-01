@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +22,21 @@ body{
 }
     </style>
 </head>
-<body>
+<body> 
+  <?php
+  setcookie("name","Cameron", time()+172800);
+
+  $_SESSION['username']="Cameron";
+  echo$_SESSION['username'];
+  
+
+  if(!isset( $_SESSION['username'])){
+      echo" You are not logged in!";
+  }
+  else{
+    echo " You are logged in!";
+  }
+  ?>
 <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="header.php">Header</a>
@@ -53,6 +69,7 @@ body{
     </div>
   </div>
 </nav>
+
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
