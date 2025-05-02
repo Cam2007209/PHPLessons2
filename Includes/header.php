@@ -63,6 +63,8 @@ body{
             <li><a class="dropdown-item" href="loops.php">Loops</a></li>
             <li><a class="dropdown-item" href="functions.php">Functions</a></li>
             <li><a class="dropdown-item" href="conditionals.php">Conditionals</a></li>
+            <li><a class="dropdown-item" href="contacts.php">Contacts</a></li>
+            
           </ul>
         </li>
       </ul>
