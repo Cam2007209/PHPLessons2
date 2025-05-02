@@ -14,16 +14,40 @@ body{
     </style>
   </head>
   <body>
-    <form method="GET">
-      <input type="text"name="person">
-      <button type="submit" name="submit" class="btn btn-light">Submit</button>
-    </form>
-    <?php
-    include 'Includes/header.php';
-    //This gets something from the database
-    $name=$_GET['person'];
-    //This is the printed text
-    echo $name. " is very smart.";
-    ?>
+  <?php 
+require "signup-includes/account-header.php";
+include_once 'includes/dbh.inc.php';
+include_once 'includes/header.php';
+
+$sql="SELECT * FROM users;";
+$result=mysqli_query($conn, $sql);
+$resultCheck=mysqli_num_rows($result);
+
+if ($resultCheck > 0) {
+  while ($row=mysqli_fetch_assoc($result)) {
+    echo htmlspecialchars($row['user_uid'])."<br>";
+  }
+}
+
+if (isset($_GET['person'])) {
+  $name=htmlspecialchars($_GET['person']);
+  echo $name." loves America!";
+}
+
+?>
+<main>
+      <div>
+<?php
+
+if (isset($_SESSION['userId'])){
+  echo "You are logged in";
+}
+else{
+  echo "You are not logged in";
+}
+
+?>
+      </div>
+    </main>
   </body>
 </html>
